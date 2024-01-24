@@ -1,0 +1,35 @@
+<link href="/fonts/SuisseIntl.css" rel="stylesheet" />
+<link href="/fonts/SuisseWorks.css" rel="stylesheet" />
+<style>
+  [data-storybook-wide] .sbdocs.sbdocs-content,
+  .sbdocs.sbdocs-content:has([data-storybook-wide]) {
+    max-width: 1440px;
+  }
+  body.dark .sbdocs-preview {
+    background-color: rgba(25, 25, 25, 1);
+  }
+  @font-face {
+    font-family: 'SuisseIntlFallback';
+    src: local("Arial");
+    ascent-override: 95.68%;
+    descent-override: 30.18%;
+    line-gap-override: 0.00%;
+    size-adjust: 103.05%;
+  }
+
+  @font-face {
+    font-family: 'SuisseWorksFallback';
+    src: local("Arial");
+    ascent-override: 90.53%;
+    descent-override: 28.56%;
+    line-gap-override: 0.00%;
+    size-adjust: 108.91%;
+  }
+
+  html, body {
+    --font-suisse-intl: 'SuisseIntl', 'SuisseIntlFallback';
+    --font-suisse-works: 'SuisseWorks', 'SuisseWorksFallback';
+    font-family: 'SuisseIntl', 'SuisseIntlFallback';
+  }
+
+</style>
