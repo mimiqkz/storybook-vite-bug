@@ -12,7 +12,7 @@ const meta: Meta<typeof Accordion> = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<AccordionBaseProps>
+} satisfies Meta<typeof Accordion>
 export default meta
 
 export const Default = (args: AccordionBaseProps) => (
